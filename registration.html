@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        .container h1{
+            text-align: center;
+        }
+        .my-form .form-group{
+        	padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/sample.jpg" width = "300" height="200">
+        <div class="container">
+            <h1>Friendship Zone<h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h3>
+                Add your details to register
+            </h3>
+        </div>
+        <form class="my-form" action="user-confirmation.html">
+			<div class="form-group">
+				<label><b>Name</b> </label>
+				<input type="text" name="firstName" placeholder="Enter firstName" required> 
+			</div>
+			<div class="form-group">
+				<label><b>Email:</b></label>
+				<input type="email" name="email">
+			</div>
+            <div class="form-group">
+				<label><b>Age:</b></label>
+				<input type="number" name="Age" min="0" max="18">
+			</div>
+            <div class="form-group">
+				<label><b>Birth Day:</b></label>
+				<input type="date" name="Birth day">
+			</div>
+            <div class="form-group">
+				<label><b>Gender:</b></label>
+				<input type="radio" id = "M" name="M" value=M >
+                <label for="M">M</label>
+                <input type="radio" value="F" name="M" id =F>
+                <label for="F">F</label>
+			</div>
+			<div class="form-group">
+				<label>About: </label>
+				<textarea name = "message"></textarea>
+			</div>
+            <div class="form-group">
+				<label><b>Phone:</b> </label>
+				<input type="text" name="firstName" >
+			</div>
+            <div class="form-group">
+				<label><b>Interested in:</b></label>
+				<input type="radio" id="F">
+                <label for="F">Friendship</label>
+                <input type="radio" id="M">
+                <label for="M">Dating</label>
+                <label><b>Attachment:</b></label>
+                <input type="file" id="myFile" name="filename">
+			</div>
+
+
+
+            <!-- <a href="user-confirmation.html">  
+                <button>Register</button>
+            </a> -->
+            <!-- <button><a href="admin-confirmation.html">Register</a></button> -->
+			<input class="button" type="submit" value = "Register" name="" >
+            <!-- <input class="button" type="submit" value = "Register as admin" name=""> -->
+            
+                <button><a href="admin-confirmation.html">Register as admin</a></button>
+            
+		</form>
+
+    </section>
+</body>
+</html>
